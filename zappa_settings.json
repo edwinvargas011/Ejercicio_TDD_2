@@ -1,0 +1,13 @@
+{
+    "dev": {
+        "app_function": "app.f",
+        "aws_region": "us-east-1",
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "manage_roles": false,
+        "project_name": "function_06_03_2",
+        "runtime": "python3.8",
+        "apigateway_enabled": false,
+        "s3_bucket": "zappa-k688t1ujo"
+    }
+}
