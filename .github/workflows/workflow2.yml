@@ -48,4 +48,4 @@ jobs:
       - name: Deploy the lambda function and the resources
         run: |
            pip install zappa
-           zappa deploy dev
+           zappa update dev
