@@ -1,13 +1,14 @@
 {
     "dev": {
-        "app_function": "app.f",
+        "app_function": "lambda_function.lambda_handler",
         "aws_region": "us-east-1",
         "keep_warm": false,
         "role_name": "LabRole",
         "manage_roles": false,
-        "project_name": "function_06_03_2",
+        "project_name": "lambda_dollar_1",
         "runtime": "python3.8",
         "apigateway_enabled": false,
-        "s3_bucket": "zappa-k688t1ujo"
+        "s3_bucket": "zappa-k688t1ujo",
+        "events": [{"expression": "rate(2 minutes)", "function": "lambda_function.lambda_handler"}]
     }
 }
