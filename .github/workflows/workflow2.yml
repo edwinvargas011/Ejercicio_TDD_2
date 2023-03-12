@@ -32,6 +32,8 @@ jobs:
           pip install virtualenv
           virtualenv env
           source env/bin/activate
+          python -m pip cache purge
+          pip install --no-cache-dir -r requirements.txt
           pip install zappa
       # Runs a set of commands using the runners shell
       
